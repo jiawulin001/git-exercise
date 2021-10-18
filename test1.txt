@@ -4,3 +4,8 @@ xxx
 xxx
 2
 3
+
+
+optimizeDeps mainly deals with upstream dependencies, and some projects have commonJS syntax in the source code, such as the original webpack project switching to vite, for example, with link dependencies on other local modules, through the vite-plugin-commonjs plugin they can choose to not to modify the source code.
+
+Another part of the reason is that there are still projects configured with optimizeDeps that don't work properly, I don't have statistics on which scenarios, there are examples of such in vite issues.
